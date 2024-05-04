@@ -9,3 +9,6 @@ git push --force
 uname
 #ask for git current version
 git --version
+
+#ref. codespace usage
+https://docs.github.com/en/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage
