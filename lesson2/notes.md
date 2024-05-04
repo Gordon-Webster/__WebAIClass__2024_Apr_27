@@ -1,5 +1,6 @@
 #Class 2 livestream
 https://www.youtube.com/watch?v=Cpl-vc1vrfk
+https://youtube.com/live/_Zn9D0zT3Xg
 
 when conflicts
 git config pull.rebase false
