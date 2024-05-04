@@ -5,3 +5,6 @@
 #Class 2
 https://www.youtube.com/watch?v=Cpl-vc1vrfk
 
+when conflicts
+git config pull.rebase false
+git push --force
