@@ -5,6 +5,8 @@ https://youtube.com/live/_Zn9D0zT3Xg
 when conflicts
 git config pull.rebase false
 git push --force
+pull
+fetch w/o merge
 
 #ask for server os
 uname
