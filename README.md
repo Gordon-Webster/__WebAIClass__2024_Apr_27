@@ -5,4 +5,6 @@
 #g_meet_link
 https://meet.google.com/jgd-ngke-aca
 
-#local directory conflict test
+
+#remote conflict test
+
