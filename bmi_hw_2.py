@@ -28,5 +28,5 @@ class BMI:
 
 
 
-s1 = BMI()
-print(s1)
+p1 = BMI()
+print(p1)
