@@ -8,7 +8,7 @@ https://meet.google.com/jgd-ngke-aca
 #class repo
 https://github.com/roberthsu2003/__113_gov_ai_web__2024_4_27__
 
-#replay
+#replay via teacher's YT channel
 https://www.youtube.com/watch?v=n_8WI1-JG6g&list=PLLVBR5MLJ8AXoAhOhxi1xLaav96Lnvk9R&index=2
 
 #remote conflict test
