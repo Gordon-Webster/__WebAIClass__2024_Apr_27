@@ -34,9 +34,14 @@
 
 class BMI:
     def __init__(self,name, weight, height) -> None:
-        self._name = name
-        self._weight = weight
-        self._height = height
+        if not name:
+            raise ValueError('Missing Name')
+        if not weight.isdigit() or not height.isdigit():
+            raise ValueError('Invalid Value Entry')
+        else:
+            self._name = name
+            self._weight = float(weight)
+            self._height = float(height)
 
     def __str__(self) -> str:
         return f'Hello {self.name}, Your BMI:{self.bmi}, Weight status:{self.weight_status(self.bmi)}'
@@ -45,11 +50,11 @@ class BMI:
     @property
     def name(self):
         return self._name
-    @name.setter
-    def name(self, name):
-        if not name:
-            raise ValueError('Missing Name')
-        self._name = name
+    # @name.setter
+    # def name(self, name):
+    #     if not name:
+    #         raise ValueError('Missing Name')
+    #     self._name = name
 
     @property
     def weight(self):
@@ -91,13 +96,11 @@ class BMI:
 def main():
     p1 = get_BMI()
     print(p1)
-    p1.height = 180
-    print(p1)
 
 def get_BMI(): 
     name = input('Enter Name: ').strip()
-    weight = float(input('Enter Weight(kg): ').strip())
-    height = float(input('Enter Height(cm): ').strip())
+    weight = (input('Enter Weight(kg): ').strip())
+    height = (input('Enter Height(cm): ').strip())
     return BMI(name, weight, height)
 
 if __name__ == '__main__':
