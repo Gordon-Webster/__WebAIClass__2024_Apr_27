@@ -26,10 +26,10 @@ class BMI:
 
 
 def main():
-    p1 = get_BMI()
+    p1 = get_bmi()
     print(f'Hello {p1.name}, BMI: {p1.bmi}, Weight Status: {p1.weight_status(p1.bmi)}')
 
-def get_BMI(): 
+def get_bmi(): 
     name = input('Enter Name: ').strip()
     weight = (input('Enter Weight(kg): ').strip())
     height = (input('Enter Height(cm): ').strip())
@@ -38,7 +38,7 @@ def get_BMI():
         raise ValueError('Missing Name')
     if not weight.isdigit() or not height.isdigit():
         raise ValueError('Invalid Value Entry')
-    return BMI(name=name, height=float(height), weight=float(weight))
+    return BMI(name, height=float(height), weight=float(weight))
 
 if __name__ == '__main__':
     main()
