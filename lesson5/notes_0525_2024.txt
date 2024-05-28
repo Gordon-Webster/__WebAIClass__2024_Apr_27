@@ -1,0 +1,25 @@
+common data container
+dict+list -->JSON
+
+
+context:
+1.morning section
+file I/O aka file handling
+with keyword
+
+https://docs.python.org/3/library/functions.html#open
+https://www.w3schools.com/python/python_file_handling.asp
+https://cs50.harvard.edu/python/2022/notes/6/
+
+str.split()
+build in func - len()
+for loop
+csv file
+csv module - DictReader
+
+
+2.afternoon
+json module
+pip install -r requirements.txt 
+
+classmethod
