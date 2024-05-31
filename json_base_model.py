@@ -19,7 +19,6 @@ with open('新北市食品工廠清冊.json') as file:
     content:str = file.read()
     fpc:Food_Processing_Company = Food_Processing_Company.model_validate_json(content)
     
-
 fpcs = fpc.result.records
-for c in fpcs:
-    print(c) 
+for _ in fpcs:
+    print(_) 
