@@ -12,12 +12,12 @@ class Companies(BaseModel):
 class Result(BaseModel):
     records:list[Companies]
 
-class Food_Processing_Company(BaseModel):
+class FoodProcessingCompany(BaseModel):
     result:Result
 
 with open('新北市食品工廠清冊.json') as file:
     content:str = file.read()
-    fpc:Food_Processing_Company = Food_Processing_Company.model_validate_json(content)
+    fpc:FoodProcessingCompany = FoodProcessingCompany.model_validate_json(content)
     
 fpcs = fpc.result.records
 for _ in fpcs:
