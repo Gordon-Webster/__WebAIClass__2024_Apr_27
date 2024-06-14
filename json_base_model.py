@@ -15,7 +15,7 @@ class Result(BaseModel):
 class FoodProcessingCompany(BaseModel):
     result:Result
 
-with open('新北市食品工廠清冊.json') as file:
+with open('新北市食品工廠清冊.json', encoding='utf-8') as file:
     content:str = file.read()
     fpc:FoodProcessingCompany = FoodProcessingCompany.model_validate_json(content)
     
