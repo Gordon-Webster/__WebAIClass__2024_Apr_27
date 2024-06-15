@@ -1,0 +1,9 @@
+webpage: html css js
+data web: interactive python streamlit
+codespace:dev env
+CI/CD - deploy
+
+
+Deploy automatically
+https://dashboard.render.com/
+fun(*) aestrist star mean not required arguement
