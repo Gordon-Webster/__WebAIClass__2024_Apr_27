@@ -4,14 +4,23 @@ import streamlit as st
 import source
 from source import Root
 
-data_str = source.download_youbike()
-root = Root.model_validate_json(data_str)
-data = root.model_dump()
 
-def ijk(value):
-    return value['行政區']
+try:
+    data_str = source.download_youbike()
+except Exception as e:
+    st.error(e)
+else:
+    root = Root.model_validate_json(data_str)
+    data = root.model_dump()
 
-areas:list[str] = list(set(map(ijk,data)))
+    def ijk(value):
+        return value['行政區']
 
-option = st.selectbox("請選擇行政區",areas)
-st.write("您選擇:", option)
+    areas:list[str] = list(set(map(ijk,data)))
+
+    option = st.selectbox("請選擇行政區",areas)
+    st.write("您選擇:", option)
+
+
+
+
