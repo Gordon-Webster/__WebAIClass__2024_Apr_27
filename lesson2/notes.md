@@ -11,7 +11,7 @@ fetch w/o merge
 #ask for server os
 uname
 #ask for git current version
-git --version
+git --versionf
 
 #ref. codespace usage
 https://docs.github.com/en/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage
